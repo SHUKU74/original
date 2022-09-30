@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+   position: fixed;
+    width: 5vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: #F3F4F0;
+}
+
+nav li {
+    /*listの点を消す*/
+    list-style: none;
+    /*縦書き、左から右に改行*/
+    writing-mode: vertical-lr;
+    margin-left: 10px;
+}
+
+nav img {
+    width: 50px;
+    padding: 20px 5px 30px 0px;
+    margin-bottom: 90px;
+}
+
+nav a{
+    color: #454545;
+    font-size: 20px;
+    font-family: 'Hiragino Mincho Pro';
+    font-weight: 100;
+    line-height: 50px;
+    padding-bottom: 40px;
+    /*aタグの下線消す*/
+    text-decoration: none;
+    /*hoverの色変更ふわっと*/
+    transition: 1s;
+}
+
+nav a:hover {
+    color: #913939;
+}
+
+hr {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+.hr {
+    margin-left: 25px;
+
+    margin-bottom: 45px;
+    width: 19px;
+    border-top: 0.8px solid rgba(69, 69, 69, 0.6);
+    
+}
+
+
+
+.wrap-video {
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.text h1{
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    font-size: 100px;
+    font-family: "Sawarabi Mincho";
+    font-weight: 200;
+    color: #fff;
+}
+
+.p {
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+}
+
+.p p {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    font-family: "Hiragino Mincho Pro";
+    font-weight: 100;
+    color: rgba(255,255, 255, 0.9);
+    line-height:55px;
+}
+
+/*おすすめ料理*/
+
+#recommendation {
+    height: 100vh;
+    position: relative;
+    background: url(./images/bg_recommend.png);
+}
+
+
+h2 {
+    font-size: 70px;
+    font-family: "Sawarabi Mincho";
+    font-weight: 100;
+    color: #626262;
+}
+
+.deco {
+    position: absolute;
+    width: 250px;
+    top: 10%;
+    left: 70%;
+}
+
+.bg-octopus {
+    position: absolute;
+    bottom: 0;
+    
+    opacity: 0.6;
+    width: 1000px;
+    height: 400px;
+}
+
+.octopus {
+    position: absolute;
+    bottom: 17%;
+    left: 15%;
+    width: 350px;
+    opacity: 0.6;
+}
+
+
+.noon h2 {
+position: absolute;
+    top: 10%;
+    left: 4%;
+}
+
+.noon img {
+    position: absolute;
+    width: 130px;
+    top: 5%;
+    left: 0;
+}
+
+.lunch-contents {
+    padding-top: 150px;
+}
+
+.lunch-contents p {
+    position: absolute;
+   padding-top: 50px;
+    left: 7%;
+    font-size: 26px;
+    line-height: 60px;
+    font-family: "Hiragino Mincho Pro";
+    font-weight: 100;
+    color: #454545;
+    z-index: 2;
+}
+
+.lunch-img1 {
+    position: absolute;
+    width: 500px;
+    margin-top: 260px;
+    left: 58%;
+}
+
+.lunch-img2 {
+    position: absolute;
+    left: 56%;
+    width: 500px;
+    height: 340px;
+    margin-top: 240px;
+}
+
+
+.recommendation-night {
+    background: url(../images/bg_recommend.png);
+    
+    height: 100vh;
+    position: relative;
+}
+
+.deco1 {
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+    opacity: 0.2;
+}
+
+.deco2 {
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.4;
+    transform: rotate(10deg);
+}
+
+.night h2 {
+    position: absolute;
+    padding-right: 50px;
+    right: 6%;
+}
+
+.night img {
+    position: absolute;
+    width: 100px;
+    padding-top: 30px;
+    padding-right: 50px;
+    right: 7%;
+    opacity: 0.8;
+}
+
+.night-contents p {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    font-size: 27px;
+    line-height: 60px;
+    font-family: "Hiragino Mincho Pro";
+    font-weight: 100;
+    color: #454545;
+    z-index: 2;
+}
+
+.dinner-img1 {
+    position: absolute;
+    top: 17%;
+    left: 13%;
+    width: 400px;
+    height: 300px;
+}
+.dinner-img2 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 400px;
+}
+.dinner-img3 {
+    position: absolute;
+    bottom: 9%;
+    right: 25%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+/*こだわり*/
+
+#pride {
+    background: url(../images/bg_pride.png);
+    height: 100vh;
+    position: relative;
+}
+
+
+
+h3 {
+    color: rgba(98, 98, 98, 0.9);
+    font-family: "Sawarabi Mincho";
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#pride h3 {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.pride {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.gallery-tennai {
+  padding: 0px 50px 0px;
+}
+
+.tennnai-p1 {
+    position: absolute;
+    bottom: 25%;
+    left: 42%;
+    writing-mode: vertical-lr;
+    font-size: 70px;
+    font-family: "Sawarabi Mincho";
+    font-weight: 100;
+    color: #D7D7D7;
+    letter-spacing: 0.12em;
+    padding-bottom: 30px;
+}
+
+.slider-tennai {
+    width: 300px;
+}
+
+.slider-tennai img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.tennai-p2 {
+    font-family: "Hiragino Mincho Pro";
+    font-size: 22px;
+    font-weight: 100;
+    color: #454545;
+    text-align: center;
+}
+
+.gallery-syokuzai {
+    padding: 0px 50px 0px;
+  }
+
+.slider-syokuzai {
+    width: 300px;
+}
+
+.slider-syokuzai img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.syokuzai-p1 {
+    position: absolute;
+    bottom: 20%;
+    right: 21%;
+    writing-mode: vertical-lr;
+    font-size: 70px;
+    font-family: "Sawarabi Mincho";
+    font-weight: 100;
+    color: #D7D7D7;
+    letter-spacing: 1.12em;
+}
+
+.syokuzai-p2 {
+    font-family: "Hiragino Mincho Pro";
+    font-size: 22px;
+    font-weight: 100;
+    color: #454545;
+    text-align: center;
+}
+
+/*店舗情報*/
+
+#information {
+    background: url(../images/bg_info.png);
+    height: 100vh;
+    position: relative;
+}
+
+.information h3 {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 6%;
+    right: 9%;
+    letter-spacing: 0.12em;
+}
+
+.accessbox {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    display: flex;
+}
+
+
+.accessbox-left {
+    margin-right: 20px;
+}
+
+.accessbox-right {
+    margin-left: 20px;
+}
+
+.access-box-title {
+    font-size: 29px;
+    font-family: "Hiragino Mincho Pro";
+    font-weight: 100;
+    color: #454545;
+}
+
+.access-box-text {
+    font-size: 27px;
+    font-family: "Hiragino Mincho Pro";
+    font-weight: 100;
+    color: #454545;
+}
+
+.accessbox hr {
+    border-top: 1px solid #454545;
+    margin: 15px 0px 15px 0px;
+}
+
+iframe {
+    position: absolute;
+    bottom: 10%;
+    left: 17%;
+}
+
+.icon {
+   position: absolute;
+    bottom: 1%; 
+    left: 42%;
+}
+
+.icon1 {
+    width: 45px;
+    padding: 0px 30px 0px 30px;
+}
+.icon2 {
+    width: 80px;
+    padding: 0px 30px 0px 30px;
+}
+.icon3 {
+    width: 45px;
+    padding: 0px 30px 0px 30px;
+}
+
+
