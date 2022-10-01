@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="firstview">
       <nav class="nav">
         <ul>
           <li><a href="#firstview"><img src="./images/logo.png" alt=""></a></li>
@@ -24,10 +24,9 @@
           <li><a href="#information">店舗情報</a></li>
         </ul>
       </nav>
-    </header>
-    <section id="firstview">
-      <div class="wrap-video">
-        
+    
+<div class="wrap-video">
+        <video src="./images/bgmovie.mp4" muted autoplay loop></video>
       <div class="title">
         <div class="text">
           <h1>おばんざい　三貴</h1>
@@ -36,9 +35,9 @@
         
       </div>
 
-      <video src="./images/bgmovie.mp4" muted autoplay loop></video>
+      
     </div>
-</section>
+</header>
 
 <section class="p">
 <p>人形町にあるおばんざい、一品料理など、<br>
@@ -77,23 +76,27 @@
     <section>
         <div class="recommendation-night">
           <div class="dinner">
-            <div>
-                <img src="./images/recommend2.png" alt="" class="deco1">
-                <img src="./images/recommend3.png" alt="" class="deco2">
-            </div>
-            <div class="night">
+          
+            <div class="night-title">
+              <div class="night">
                 <img src="./images/night.png" alt="">
               <h2>夜</h2>  
             </div>
+            </div>
+            
           <div class="night-contents">
-            <p>
+
+              <p>
             夜は予約制のため、静かな心地よい雰囲気のなか、<br>
             美味しいお料理などを楽しむことができます。
           </p>
           <img src="./images/nightphoto.png" alt="" class="dinner-img1">
           <img src="./images/dinner.JPG" alt="" class="dinner-img2">
+            <img src="./images/IMG_0809.PNG" alt="" class="deco3">
+          <img src="./images/recommend2.png" alt="" class="deco1">
+          <img src="./images/recommend3.png" alt="" class="deco2">
           <img src="./images/dinner2.JPG" alt="" class="dinner-img3">
-          </div>
+        </div>
           
         </div>     
         </div>
@@ -103,6 +106,8 @@
     <section id="pride">
       
       <h3>こだわり</h3>
+      <div class="pride1">
+
       <div class="pride">
         <div class="gallery-tennai">
 
@@ -160,14 +165,16 @@
             提供されています。</p>
       </div>
         </div>
-      
+      </div>
 </div>  
     </section>
     
     <section id="information">
 <div class="information">
+
     <h3>店舗情報</h3>
-</div>
+
+  
 <div class="accessbox">
   <div class="accessbox-left">
    <p class="access-box-title">住所</p>
@@ -189,8 +196,10 @@
 </div>  
 </div>
 
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.600132851617!2d139.7786517152876!3d35.68684673727132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889766f3de299%3A0x26321a52f791c93b!2z44GK44Gw44KT44GW44GEIOS4ieiytA!5e0!3m2!1sja!2sjp!4v1664535547357!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.60013285161!2d139.7786517152876!3d35.686846737271296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f5!3m3!1m2!1s0x601889766f3de299%3A0x26321a52f791c93b!2z44GK44Gw44KT44GW44GEIOS4ieiytA!5e0!3m2!1sja!2sjp!4v1664468592105!5m2!1sja!2sjp" width="900" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
 
 
 <div class="icon">
@@ -198,8 +207,9 @@
   <a href="http://obanzai-miki.tokyo/"><img class="icon2" src="./images/hp.PNG" alt=""></a>
 <a href="https://www.facebook.com/obanzaimiki/"><img class="icon3" src="./images/facebook.png" alt=""></a> 
 </div>
-
+</div>
     </section>
+    <footer></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/slick-settings.js"></script>

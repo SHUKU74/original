@@ -11,7 +11,7 @@ nav {
     position: absolute;
     right: 0;
    position: fixed;
-    width: 80px;
+    width: 6vw;
     height: 100vh;
     z-index: 2;
     background-color: #F3F4F0;
@@ -37,7 +37,7 @@ nav a{
     font-family: 'Hiragino Mincho Pro';
     font-weight: 100;
     line-height: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     /*aタグの下線消す*/
     text-decoration: none;
     /*hoverの色変更ふわっと*/
@@ -64,42 +64,116 @@ hr {
     
 }
 
+@media (max-width:955px) {
+
+    header {
+        position: static;
+    }
+
+    nav {
+        position: relative;
+       position: static;
+        width: auto;
+        height: 0px;
+        z-index: 2;
+        background-color: transparent;
+        
+    }
+
+    nav ul {
+        writing-mode: vertical-rl;
+    }
+
+    nav li {
+        /*listの点を消す*/
+        list-style: none;
+        /*縦書き、左から右に改行*/
+        writing-mode: vertical-lr;
+        height: 300px;
+        margin-left: 30px;
+
+    }
+    
+    
+    nav a{
+        color: rgb(185, 185, 185);
+        font-size: 20px;
+        font-family: 'Hiragino Mincho Pro';
+        font-weight: 100;
+        line-height: 50px;
+        padding-bottom: 0px;
+        padding-top: 60px;
+        text-decoration: underline;
+        /*hoverの色変更ふわっと*/
+        transition: 1s;
+    }
+
+    nav img {
+        position: absolute;
+        right: 5%;
+        width: 50px;
+        padding: 0px 5px 30px 0px;
+        margin-bottom: 0px;
+    }
+
+    .hr {
+        display: none;
+    }
+}
+
 
 
 .wrap-video {
-    position: relative;
-    width: 95vw;
-    height: 100vh;
+    width: 94vw;
+    height: 100vh; 
+}
+
+@media (max-width:955px) {
+    .wrap-video {
+        width: 100vw;
+        height: 100vh; 
+    }
 }
 
 video {
-    width: 95%;
+    width: 100vw;
     position: fixed;
-    height: 100%;
+    height: 900px;
     object-fit: cover; 
     z-index: -1;
+    overflow: hidden;
 }
 
 .text h1{
-    position: absolute;
-    top: 40%;
-    left: 19%;
+    padding-top: 350px;
+    text-align: center;
     font-size: 100px;
     font-family: "Sawarabi Mincho";
     font-weight: 200;
     color: #fff;
 }
 
+@media (max-width: 880px) {
+    .text h1{
+        padding-top: 350px;
+        text-align: center;
+        font-size: 60px;
+        font-family: "Sawarabi Mincho";
+        font-weight: 200;
+        color: #fff;
+    }
+}
+
 .p {
-    position: relative;
-    width: 95vw;
     height: 100vh;
+    width: 94vw;
+    position: relative;
 }
 
 .p p {
     position: absolute;
+    right: 8%;
     bottom: 5%;
-    right: 5%;
     display: inline-block;
     text-align: left;
     font-size: 25px;
@@ -109,13 +183,36 @@ video {
     line-height:55px;
 }
 
+@media (max-width: 880px) {
+    .p {
+        height: 100vh;
+        width: 100vw;
+        position: static;
+    }
+
+    .p p {
+        position: static;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: rgba(255,255, 255, 0.9);
+        line-height:55px;
+    }
+}
+
 /*おすすめ料理*/
 
 #recommendation {
     height: 100vh;
+    width: 94vw;
     position: relative;
     background: url(./images/bg_recommend.png);
 }
+
+
 
 
 h2 {
@@ -137,7 +234,7 @@ h2 {
     bottom: 0;
     
     opacity: 0.6;
-    width: 1000px;
+    width: 80vw;
     height: 400px;
 }
 
@@ -181,52 +278,69 @@ position: absolute;
 
 .lunch-img1 {
     position: absolute;
-    width: 500px;
-    margin-top: 260px;
-    left: 58%;
+    width: 400px;
+    height: 240px;
+    top: 63%;
+    right: 8%;
 }
 
 .lunch-img2 {
     position: absolute;
-    left: 56%;
-    width: 500px;
-    height: 340px;
-    margin-top: 240px;
+    right: 10%;
+    top: 60%;
+    width: 400px;
+    height: 240px;
+
 }
 
+@media (max-width:955px) {
+
+    #recommendation {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: url(./images/bg_recommend.png);
+    }
+    
+    .octopus {
+        position: absolute;
+        bottom: 0%;
+        left: 5%;
+        width: 350px;
+        opacity: 0.6;
+    }
+
+    .lunch-contents p {
+        position: static;
+        text-align: center;
+       padding-top: 55px;
+        font-size: 26px;
+        line-height: 60px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: #454545;
+        z-index: 2;
+    }
+}
 
 .recommendation-night {
     background: url(../images/bg_recommend.png);
-    
     height: 100vh;
+    width: 94vw;
     position: relative;
 }
 
-.deco1 {
-    position: absolute;
-    bottom: 3%;
-    left: 15%;
-    opacity: 0.2;
-}
 
-.deco2 {
-    position: absolute;
-    bottom: 0;
-    width: 800px;
-    height: 350px;
-    object-fit: cover;
-    opacity: 0.4;
-    transform: rotate(10deg);
-}
 
 .night h2 {
     position: absolute;
-    padding-right: 50px;
     right: 6%;
+    padding-right: 50px;
 }
 
 .night img {
     position: absolute;
+    right: 6%;
     width: 100px;
     padding-top: 30px;
     padding-right: 50px;
@@ -234,10 +348,11 @@ position: absolute;
     opacity: 0.8;
 }
 
+
 .night-contents p {
-    position: absolute;
-    top: 30%;
-    right: 8%;
+position: absolute;
+top: 23%;
+right: 5%;
     font-size: 27px;
     line-height: 60px;
     font-family: "Hiragino Mincho Pro";
@@ -246,38 +361,126 @@ position: absolute;
     z-index: 2;
 }
 
+.deco3 {
+    position: absolute;
+top: 13%;
+right: 5%;
+opacity: 0.4;
+}
+
 .dinner-img1 {
     position: absolute;
-    top: 17%;
+    top: 10%;
     left: 13%;
     width: 400px;
     height: 300px;
 }
 .dinner-img2 {
     position: absolute;
-    top: 20%;
+    top: 13%;
     left: 15%;
     width: 400px;
 }
+
+
 .dinner-img3 {
     position: absolute;
-    bottom: 9%;
-    right: 25%;
+    bottom: 6%;
+    right: 10%;
     width: 250px;
     height: 250px;
     object-fit: cover;
     opacity: 0.9;
 }
 
+.deco1 {
+    position: absolute;
+    left: 25%;
+    bottom: 6%;
+    opacity: 0.2;
+    width: 60vw;
+}
+
+.deco2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.4;
+    transform: rotate(10deg);
+}
+
+@media (max-width:955px) {
+
+    .recommendation-night {
+        background: url(../images/bg_recommend.png);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    .night-contents p {
+        position: absolute;
+        top: 43%;
+        right: 5%;
+            font-size: 27px;
+            line-height: 60px;
+            font-family: "Hiragino Mincho Pro";
+            font-weight: 100;
+            color: #454545;
+            z-index: 2;
+        }
+
+        .deco3 {
+            position: absolute;
+        top: 33%;
+        right: 5%;
+        opacity: 0.4;
+        }
+
+    .dinner-img1 {
+        position: absolute;
+        top: 30%;
+        left: 13%;
+        width: 300px;
+        height: 200px;
+    }
+    .dinner-img2 {
+        position: absolute;
+        top: 33%;
+        left: 15%;
+        width: 300px;
+    }
+    
+    .dinner-img3 {
+        position: absolute;
+        bottom: 6%;
+        right: 10%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+}
+
+
 /*こだわり*/
 
 #pride {
     background: url(../images/bg_pride.png);
-    height: 100vh;
-    position: relative;
+
+    width: 94vw;
 }
 
-
+@media (max-width:955px) {
+    #pride {
+        background: url(../images/bg_pride.png);
+    
+        width: 100vw;
+    }
+}
 
 h3 {
     color: rgba(98, 98, 98, 0.9);
@@ -287,37 +490,26 @@ h3 {
 }
 
 #pride h3 {
-    position: absolute;
-    top: 3%;
-    left: 3%;
+    padding: 70px 0px 0px 70px ;
 }
 
 .pride {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 160px;
 }
+
+
 
 .gallery-tennai {
   padding: 0px 50px 0px;
 }
 
-.tennnai-p1 {
-    position: absolute;
-    bottom: 25%;
-    left: 42%;
-    writing-mode: vertical-lr;
-    font-size: 70px;
-    font-family: "Sawarabi Mincho";
-    font-weight: 100;
-    color: #D7D7D7;
-    letter-spacing: 0.12em;
-    padding-bottom: 30px;
-}
+
 
 .slider-tennai {
     width: 300px;
+
 }
 
 .slider-tennai img {
@@ -326,13 +518,61 @@ h3 {
     object-fit: cover;
 }
 
+
+
+.tennnai-p1 {
+    position: relative;
+    z-index: 2;
+    writing-mode: vertical-lr;
+    font-size: 70px;
+    font-family: "Sawarabi Mincho";
+    font-weight: 100;
+    color: #D7D7D7;
+    letter-spacing: 0.12em;
+    padding-bottom: 50px;
+    margin-left: 250px;
+    margin-top: -200px;
+}
+
 .tennai-p2 {
     font-family: "Hiragino Mincho Pro";
     font-size: 22px;
     font-weight: 100;
     color: #454545;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+@media (max-width: 880px) {
+    .pride1 {
+        display: flex;
+        justify-content: center;
+    
+    }
+    .pride {
+        display: inline;
+    }
+
+    .slider-tennai {
+        width: 450px;
+    }
+
+    .slider-tennai img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .tennnai-p1 {
+        writing-mode:horizontal-tb;
+        margin-left: 350px;
+        margin-top: -80px;
+
+    }
+
+}
+
 
 .gallery-syokuzai {
     padding: 0px 50px 0px;
@@ -340,24 +580,26 @@ h3 {
 
 .slider-syokuzai {
     width: 300px;
+    margin-top: -30px;
 }
 
 .slider-syokuzai img {
     width: 300px;
-    height: 450px;
+    height: 450px; 
     object-fit: cover;
 }
 
 .syokuzai-p1 {
-    position: absolute;
-    bottom: 20%;
-    right: 21%;
+    position: relative;
+    z-index: 2;
     writing-mode: vertical-lr;
     font-size: 70px;
     font-family: "Sawarabi Mincho";
     font-weight: 100;
     color: #D7D7D7;
     letter-spacing: 1.12em;
+    margin-top: -200px;
+    margin-left: 250px;
 }
 
 .syokuzai-p2 {
@@ -368,29 +610,69 @@ h3 {
     text-align: center;
 }
 
+@media (max-width:880px) {
+    .slider-syokuzai {
+        width: 450px;
+    }
+
+    .slider-syokuzai img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .syokuzai-p1 {
+        writing-mode:horizontal-tb;
+        letter-spacing: 0.12em;
+        margin-left: 350px;
+        margin-top: -80px;
+    }
+}
+
+
+
 /*店舗情報*/
 
 #information {
-    background: url(../images/bg_info.png);
-    height: 100vh;
-    position: relative;
+    background: url(../images/bg_info.png) ;
+position: relative;
+
+width: 94vw;
 }
 
+@media (max-width:955px) {
+    #information {
+        background: url(../images/bg_info.png) ;
+    position: relative;
+    
+    width: 100vw;
+    }
+}
+
+
 .information h3 {
-    writing-mode: vertical-lr;
     position: absolute;
-    top: 6%;
-    right: 9%;
+    right: 3%;
+    writing-mode: vertical-lr;
     letter-spacing: 0.12em;
 }
 
-.accessbox {
-    position: absolute;
-    top: 20%;
-    left: 18%;
-    display: flex;
+@media (max-width:1150px) {
+    .information h3 {
+        font-size: 50px;
+        position: absolute;
+        right: 3%;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.12em;
+    }
 }
 
+.accessbox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 180px;
+}
 
 .accessbox-left {
     margin-right: 20px;
@@ -420,15 +702,68 @@ h3 {
 }
 
 iframe {
-    position: absolute;
-    bottom: 10%;
-    left: 17%;
+    width: 900px;
+    height: 270px;
+}
+
+@media (max-width: 960px) {
+    .information{
+        text-align: center;
+    }
+    .accessbox{
+        display: inline-block;
+        
+        padding-bottom: 50px;
+        padding-top: 180px;
+    }
+
+    .accessbox-left {
+        margin-right: 0px;
+ 
+    }
+    
+    .accessbox-right {
+        margin-left: 0px;
+  
+    }
+
+    .access-box-title {
+        text-align: left;
+        font-size: 29px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: #454545;
+    }
+    
+    .access-box-text {
+        text-align: left;
+        font-size: 27px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: #454545;
+    }
+
+    .accessbox hr {
+        width: 450px;
+        border-top: 1px solid #454545;
+        margin: 15px 0px 15px 0px;
+    }
+
+    iframe {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+
 }
 
 .icon {
-   position: absolute;
-    bottom: 1%; 
-    left: 42%;
+    text-align: center;
 }
 
 .icon1 {
