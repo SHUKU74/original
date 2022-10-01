@@ -121,6 +121,21 @@ hr {
     }
 }
 
+@media (max-width: 880px) {
+    nav a{
+        color: rgb(185, 185, 185);
+        font-size: 15px;
+        font-family: 'Hiragino Mincho Pro';
+        font-weight: 100;
+        line-height: 50px;
+        padding-bottom: 0px;
+        padding-top: 60px;
+        text-decoration: underline;
+        /*hoverの色変更ふわっと*/
+        transition: 1s;
+    }
+}
+
 
 
 .wrap-video {
@@ -196,6 +211,29 @@ video {
         justify-content: center;
         text-align: center;
         font-size: 25px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: rgba(255,255, 255, 0.9);
+        line-height:55px;
+    }
+}
+
+@media (max-width:450px){
+    .text h1{
+        padding-top: 350px;
+        text-align: center;
+        font-size: 40px;
+        font-family: "Sawarabi Mincho";
+        font-weight: 200;
+        color: #fff;
+    }
+
+    .p p {
+        position: static;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
         font-family: "Hiragino Mincho Pro";
         font-weight: 100;
         color: rgba(255,255, 255, 0.9);
@@ -301,6 +339,26 @@ position: absolute;
         position: relative;
         background: url(./images/bg_recommend.png);
     }
+
+    h2 {
+        font-size: 50px;
+        font-family: "Sawarabi Mincho";
+        font-weight: 100;
+        color: #626262;
+    }
+
+    .noon h2 {
+        position: absolute;
+            top: 10%;
+            left: 20%;
+        }
+        
+        .noon img {
+            position: absolute;
+            width: 130px;
+            top: 5%;
+            left: 3%;
+        }
     
     .octopus {
         position: absolute;
@@ -321,7 +379,70 @@ position: absolute;
         color: #454545;
         z-index: 2;
     }
+
+    
 }
+
+@media (max-width:450px) {
+
+    #recommendation {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: url(./images/bg_recommend.png);
+    }
+    .deco{
+        display: none;
+    }
+
+    .bg-octopus {
+        position: absolute;
+        bottom: 0;
+        
+        opacity: 0.6;
+        width: 80vw;
+        height: 200px;
+    }
+
+    .octopus {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        width: 200px;
+        opacity: 0.6;
+    }
+
+    .lunch-contents p {
+        position: static;
+        text-align: center;
+       padding-top: 55px;
+        font-size: 13px;
+        line-height: 30px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 300;
+        color: #454545;
+        z-index: 2;
+    }
+
+    .lunch-img1 {
+        position: absolute;
+        width: 230px;
+        height: 140px;
+        top:55%;
+        right: 8%;
+    }
+    
+    .lunch-img2 {
+        position: absolute;
+        right: 10%;
+        top: 52%;
+        width: 230px;
+        height: 140px;
+    
+    }
+}
+
+
 
 .recommendation-night {
     background: url(../images/bg_recommend.png);
@@ -465,6 +586,92 @@ opacity: 0.4;
     }
 }
 
+@media (max-width:450px) {
+    .night h2 {
+        position: absolute;
+        right: 4%;
+        top: 10%;
+        padding-right: 20px;
+    }
+
+    .night-contents p {
+        position: absolute;
+        top: 33%;
+        right: 5%;
+            font-size: 13px;
+            line-height: 20px;
+            font-family: "Hiragino Mincho Pro";
+            font-weight: 100;
+            color: #454545;
+            z-index: 2;
+        }
+
+        .deco3 {
+            position: absolute;
+        top: 28%;
+        right: 0%;
+        width: 400px;
+        height: 120px;
+        opacity: 0.3;
+        }
+
+    .night img {
+        position: absolute;
+        right: 6%;
+        width: 100px;
+        padding-top: 30px;
+        padding-right: 20px;
+        right: 7%;
+        opacity: 0.8;
+    }
+
+    .dinner-img1 {
+        position: absolute;
+        top: 26%;
+        left: 5%;
+        width: 200px;
+        height: 150px;
+    }
+    .dinner-img2 {
+        position: absolute;
+        top: 28%;
+        left: 7%;
+        width: 200px;
+    }
+    
+    .dinner-img3 {
+        position: absolute;
+        bottom: 18%;
+        right: 10%;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    .deco1 {
+        position: absolute;
+        left: 25%;
+        bottom: 16%;
+        opacity: 0.2;
+        width: 60vw;
+    }
+    
+    .deco2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80vw;
+        height: 250px;
+        object-fit: cover;
+        opacity: 0.4;
+        transform: rotate(10deg);
+    }
+
+
+}
+
+
 
 /*こだわり*/
 
@@ -481,6 +688,8 @@ opacity: 0.4;
         width: 100vw;
     }
 }
+
+
 
 h3 {
     color: rgba(98, 98, 98, 0.9);
@@ -568,7 +777,53 @@ h3 {
         writing-mode:horizontal-tb;
         margin-left: 350px;
         margin-top: -80px;
+    }
 
+
+
+}
+
+@media (max-width: 450px) {
+    .pride1 {
+        display: flex;
+        justify-content: center;
+    }
+    .pride {
+        display: inline;
+    }
+
+    h3 {
+        color: rgba(98, 98, 98, 0.9);
+        font-family: "Sawarabi Mincho";
+        font-size: 35px;
+        font-weight: 100;
+    }
+
+    #pride h3 {
+        padding: 30px 0px 0px 70px ;
+    }
+
+    .slider-tennai {
+        width: 250px;
+    }
+
+    .slider-tennai img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .tennnai-p1 {
+        writing-mode:horizontal-tb;
+        margin-left: 180px;
+        margin-top: -80px;
+        font-size: 40px;
+    }
+
+    .tennai-p2 {
+        font-size: 15px;
+        margin-top: -60px;
+        margin-bottom: 30px;
     }
 
 }
@@ -629,6 +884,32 @@ h3 {
     }
 }
 
+@media (max-width:450px) {
+    .slider-syokuzai {
+        width: 250px;
+    }
+
+    .slider-syokuzai img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .syokuzai-p1 {
+        writing-mode:horizontal-tb;
+        letter-spacing: 0.12em;
+        margin-left: 180px;
+        margin-top: -80px;
+        font-size: 40px;
+    }
+
+    .syokuzai-p2 {
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+
 
 
 /*店舗情報*/
@@ -660,6 +941,16 @@ width: 94vw;
 @media (max-width:1150px) {
     .information h3 {
         font-size: 50px;
+        position: absolute;
+        right: 3%;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.12em;
+    }
+}
+
+@media (max-width:450px) {
+    .information h3 {
+        font-size: 35px;
         position: absolute;
         right: 3%;
         writing-mode: vertical-lr;
@@ -779,4 +1070,65 @@ iframe {
     padding: 0px 30px 0px 30px;
 }
 
+@media (max-width: 450px) {
+    .information{
+        text-align: center;
+    }
+    .accessbox{
+        display: inline-block;
+        
+        padding-bottom: 50px;
+        padding-top: 180px;
+    }
 
+    .accessbox-left {
+        margin-right: 0px;
+ 
+    }
+    
+    .accessbox-right {
+        margin-left: 0px;
+  
+    }
+
+    .access-box-title {
+        text-align: left;
+        font-size: 21px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: #454545;
+    }
+    
+    .access-box-text {
+        text-align: left;
+        font-size: 20px;
+        font-family: "Hiragino Mincho Pro";
+        font-weight: 100;
+        color: #454545;
+    }
+
+    .accessbox hr {
+        width: 300px;
+        border-top: 1px solid #454545;
+        margin: 15px 0px 15px 0px;
+    }
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon1 {
+        width: 25px;
+        padding: 0px 30px 0px 30px;
+    }
+    .icon2 {
+        width: 45px;
+        padding: 0px 30px 0px 30px;
+    }
+    .icon3 {
+        width: 25px;
+        padding: 0px 30px 0px 30px;
+    }
+
+}
