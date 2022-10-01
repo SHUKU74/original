@@ -952,7 +952,7 @@ width: 94vw;
     .information h3 {
         font-size: 35px;
         position: absolute;
-        right: 3%;
+        right: 5%;
         writing-mode: vertical-lr;
         letter-spacing: 0.12em;
     }
