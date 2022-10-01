@@ -800,7 +800,7 @@ h3 {
     }
 
     #pride h3 {
-        padding: 30px 0px 0px 70px ;
+        padding: 30px 0px 20px 30px ;
     }
 
     .slider-tennai {
@@ -1093,7 +1093,7 @@ iframe {
 
     .access-box-title {
         text-align: left;
-        font-size: 21px;
+        font-size: 18px;
         font-family: "Hiragino Mincho Pro";
         font-weight: 100;
         color: #454545;
@@ -1101,7 +1101,7 @@ iframe {
     
     .access-box-text {
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Hiragino Mincho Pro";
         font-weight: 100;
         color: #454545;
